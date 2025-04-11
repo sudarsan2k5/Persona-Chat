@@ -1,2 +1,21 @@
 # Environment variables
 .env
+
+# Virtual environment
+myenv/
+venv/
+*/venv/
+.venv/
+*/.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build artifacts
+/build/
+/dist/
+
+# Streamlit specific
+.streamlit/
