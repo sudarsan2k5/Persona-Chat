@@ -2,10 +2,12 @@ import streamlit as st
 import google.generativeai as genai
 import google.generativeai.types as types
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv # Removed for Vercel
 
-load_dotenv()
+# Load environment variables from .env file
+# load_dotenv() # Removed for Vercel
 
+# Get the API key from the environment variable (Vercel injects this)
 API_KEY = os.getenv("GEMINI_API_KEY")
 
 if not API_KEY:
